@@ -1,11 +1,16 @@
 ## Date with Nancy on OS X
 
-1. Download Mono MDK: http://www.go-mono.com/mono-downloads/download.html
-2. Download Xamarin Studio: http://monodevelop.com/Download
-3. Install NuGet AddIn: https://github.com/mrward/monodevelop-nuget-addin
-4. Create C# Console Project
-5. __Manage Nuget Packages...__ and add `Nancy` and `Nancy.Hosting.Self` packages.
-6. In `Program.cs` at the top add:
+ 1) Download Mono MDK: http://www.go-mono.com/mono-downloads/download.html
+ 
+ 2) Download Xamarin Studio: http://monodevelop.com/Download
+ 
+ 3) Install NuGet AddIn: https://github.com/mrward/monodevelop-nuget-addin
+ 
+ 4) Create C# Console Project
+ 
+ 5) __Manage Nuget Packages...__ and add `Nancy` and `Nancy.Hosting.Self` packages.
+ 
+ 6) In `Program.cs` at the top add:
 
 ```csharp
   using Nancy;
@@ -22,7 +27,7 @@ in `Main` method add:
   }
 ```
 
-7. Add empty C# class `HelloModule` and replace with following code:
+7) Add empty C# class `HelloModule` and replace with following code:
 
 ```csharp
 using System;
@@ -37,4 +42,4 @@ public class HelloModule : NancyModule
 }
 ```
 
-8. Check http://localhost:3000
+8) Check [http://localhost:3000](http://localhost:3000)
